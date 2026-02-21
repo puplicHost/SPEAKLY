@@ -107,6 +107,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Video Autoplay with Sound Logic
+    const promoVideo = document.getElementById('promoVideo');
+    if (promoVideo) {
+        const startVideoWithSound = () => {
+            promoVideo.muted = false;
+            promoVideo.play().catch(error => {
+                console.log("Video play failed or was blocked:", error);
+            });
+            // Remove listeners once activated
+            window.removeEventListener('click', startVideoWithSound);
+            window.removeEventListener('touchstart', startVideoWithSound);
+            window.removeEventListener('scroll', startVideoWithSound);
+        };
+
+        window.addEventListener('click', startVideoWithSound);
+        window.addEventListener('touchstart', startVideoWithSound);
+        window.addEventListener('scroll', startVideoWithSound);
+    }
+
     // Add animation classes to elements
     document.querySelectorAll('.problem-card, .solution-item, .review-image').forEach((el, index) => {
         el.style.opacity = '0';
