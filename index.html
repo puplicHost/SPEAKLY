@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPEAKLY | تعلم اللغة من الصفر حتى الطلاقة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="index.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <img src="logo.png" alt="SPEAKLY Logo">
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#problem">المشكلة</a></li>
+                <li><a href="#solution">الحل</a></li>
+                <li><a href="#reviews">آراء الطلاب</a></li>
+                <li><a href="#faq">الأسئلة الشائعة</a></li>
+            </ul>
+            <a href="https://www.speakly.fr" class="btn btn-primary btn-nav">ابدأ الآن</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container hero-content">
+            <h1 class="fade-in">كم فرصة ضاعت منك فقط لأنك لم تتحدث بثقة؟</h1>
+            <p class="subheadline fade-in" style="animation-delay: 0.2s;">ابدأ من الصفر، وتعلّم اللغة خطوة بخطوة حتى
+                تتحدث بطلاقة.</p>
+
+            <!-- Video Section -->
+            <div class="video-container fade-in" style="animation-delay: 0.8s;">
+                <video id="promoVideo" style="display:block; width:100%; height:100%;" autoplay muted loop playsinline
+                    controls preload="metadata">
+                    <source src="herovideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="fade-in" style="animation-delay: 1s; margin-top: 2.5rem;">
+                <div class="price-tag">
+                    49€ شهرياً – ثلاث حصص مباشرة أسبوعياً
+                </div>
+            </div>
+
+            <div class="fade-in" style="animation-delay: 1.2s; margin-top: 1.5rem;">
+                <a href="https://www.speakly.fr" class="btn btn-primary">ابدأ الآن</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Problem Section -->
+    <section class="problem section-padding" id="problem">
+        <div class="container">
+            <h2 class="section-title">هل تعيش هذا الواقع؟</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <i data-lucide="message-square-off" class="card-icon"></i>
+                    <h3>تفهم جيداً لكنك تتردد عند التحدث</h3>
+                </div>
+                <div class="problem-card">
+                    <i data-lucide="shield-alert" class="card-icon"></i>
+                    <h3>تخاف من الخطأ أمام الآخرين</h3>
+                </div>
+                <div class="problem-card">
+                    <i data-lucide="briefcase" class="card-icon"></i>
+                    <h3>تضيع فرصاً في العمل بسبب ضعف التواصل</h3>
+                </div>
+                <div class="problem-card">
+                    <i data-lucide="map-pin" class="card-icon"></i>
+                    <h3>لا تعرف من أين تبدأ</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution section-padding" id="solution">
+        <div class="container">
+            <h2 class="section-title">منهج عملي يبدأ معك من الصفر</h2>
+            <div class="solution-grid">
+                <div class="solution-item">
+                    <div class="solution-icon"><i data-lucide="book-open"></i></div>
+                    <div>
+                        <h3>شرح مبسّط وسلس</h3>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-icon"><i data-lucide="mic"></i></div>
+                    <div>
+                        <h3>تدريبات عملية على المحادثة</h3>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-icon"><i data-lucide="edit-3"></i></div>
+                    <div>
+                        <h3>تصحيح مباشر للأخطاء</h3>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-icon"><i data-lucide="trending-up"></i></div>
+                    <div>
+                        <h3>تقدم تدريجي ومنظم</h3>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-icon"><i data-lucide="users"></i></div>
+                    <div>
+                        <h3>بيئة تعليمية آمنة</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews section-padding" id="reviews">
+        <div class="container">
+            <h2 class="section-title">ماذا يقول طلابنا؟</h2>
+            <div class="reviews-grid images-only">
+                <img src="reviews/review.jpg" alt="Student Review 1" class="review-image" loading="lazy">
+                <img src="reviews/review2.jpg" alt="Student Review 2" class="review-image" loading="lazy">
+                <img src="reviews/review3.jpg" alt="Student Review 3" class="review-image" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Value & Offer Section -->
+    <section class="offer section-padding">
+        <div class="container">
+            <div class="offer-card">
+                <h2>استثمر في لغتك… واسترجع فرصك.</h2>
+                <div class="offer-list">
+                    <div class="offer-item">
+                        <i data-lucide="check-circle-2"></i>
+                        <span>12 حصة مباشرة كل شهر</span>
+                    </div>
+                    <div class="offer-item">
+                        <i data-lucide="check-circle-2"></i>
+                        <span>تدريب عملي على المحادثة</span>
+                    </div>
+                    <div class="offer-item">
+                        <i data-lucide="check-circle-2"></i>
+                        <span>تصحيح فوري للأخطاء</span>
+                    </div>
+                    <div class="offer-item">
+                        <i data-lucide="check-circle-2"></i>
+                        <span>منهج يبدأ معك من الصفر</span>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div class="price-large">49€</div>
+                    <p class="price-sub">شهرياً فقط (أقل من 5€ للحصة الواحدة)</p>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <a href="https://www.speakly.fr" class="btn btn-primary">ابدأ الآن مقابل 49€ فقط</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding" id="faq">
+        <div class="container">
+            <h2 class="section-title">الأسئلة الشائعة</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>هل أحتاج مستوى مسبق؟</span>
+                        <i data-lucide="chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>لا. نبدأ معك من الصفر خطوة بخطوة.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>هل الحصص مباشرة؟</span>
+                        <i data-lucide="chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>نعم، ثلاث حصص مباشرة أسبوعياً مع تصحيح فوري.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>هل يمكنني الإلغاء في أي وقت؟</span>
+                        <i data-lucide="chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>نعم، يمكنك التوقف في أي وقت دون التزام طويل.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>كيف أبدأ؟</span>
+                        <i data-lucide="chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>اضغط على “ابدأ الآن”، أكمل التسجيل وابدأ حصصك مباشرة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>لا تؤجل فرصة جديدة بسبب اللغة.</h2>
+            <a href="https://www.speakly.fr" class="btn btn-primary">ابدأ اليوم</a>
+        </div>
+    </section>
+
+    <!-- Image Modal (Lightbox) -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="imgFull">
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
